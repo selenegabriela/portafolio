@@ -1,29 +1,48 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 import s from './LandingPage.module.css';
 import laptopImage from '../../images/laptop.png'
 import nameImage from '../../images/selenegabriela.svg'
+import iconUp from '../../images/icon-up.svg'
+import iconDown from '../../images/icon-down.svg'
+import { useNavigate } from 'react-router-dom';
+import Welcome from '../../components/Welcome/Welcome';
 
-const Home = () => {
+const LandingPage = () => {
+  const navigate = useNavigate();
+  const [ showWelcomeComponent, setShowWelcomeComponent ] = useState(false);
+
+  const showWelcome = () => {
+    setShowWelcomeComponent(true);
+
+    setTimeout(() => {
+      setShowWelcomeComponent(false)
+      navigate('/home');
+    }, 5000)
+  }
 
   return (
-    <div>
+    <div >
+      {showWelcomeComponent && <Welcome/>}
       <div>
         <div className={s.flexNameImage}>
           <div>
+            <img className={s.icons} src={iconUp} alt="icon" />
             <p>Hola,</p>
-            <p>Mi nombre es </p>
+            <p>mi nombre es </p>
             <img className={s.name} src={nameImage} alt="name" />
+            <img className={s.icons} src={iconDown} alt="icon" />
           </div>
           <div>
-            <img src={laptopImage} alt="laptop-icon"/>
+            <img className={s.img} src={laptopImage} alt="laptop-icon"/>
           </div>
         </div>
         <div className={s.positionButton}>
-          <p>Fullstack web developer</p>
-          <NavLink to='/home'>
-            <button>Continuar</button>
-          </NavLink>
+          <div>
+            <p className={s.position}>Fullstack web developer</p>
+          </div>
+          <button onClick={showWelcome}>
+            Continuar
+          </button>
         </div>
         
       </div>
@@ -33,4 +52,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default LandingPage;

@@ -4,6 +4,10 @@
   
 } */
 
+.relative {
+  position: relative;
+}
+
 .flexNameImage {
   width: 100%;
   display: flex;
@@ -16,17 +20,72 @@
 
 .flexNameImage .name {
   width: 500px;
-  margin-left: 50px;
+  margin-left: 120px;
 }
 
 .flexNameImage p {
-  margin: 20px 0 20px 50px;
+  margin: 20px 0 20px 120px;
+}
+
+.img {
+  margin-right: 50px;
+  width: 85%;
+}
+
+.relative {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  width: 170px;
+}
+
+.icons:first-child {
+  top: 40px;
+  left: 40px;
+}
+
+.icons:last-child {
+  left: 550px;
+  bottom: 190px;
+}
+
+.position {
+  font-family: var(--font);
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 50px;
 }
 
 .positionButton {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #082C63;
+  background-color: var(--blue);
+}
+
+.positionButton button {
+  background-color: #07244e;
+  border-style: none;
+  color: var(--white);
+  text-decoration: none;
+  width: 15%;
+  font-family: var(--font);
+  font-size: 22px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.positionButton button:hover {
+  width: 17%;
+  background-color: rgb(230, 230, 230);
+  color: var(--blue);
+  font-weight: bold;
+  border-width: 30px;
+  transition-duration: 150ms;
+  cursor: pointer;
 }
 
 

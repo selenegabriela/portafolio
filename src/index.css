@@ -1,8 +1,10 @@
 :root {
   --black: #000;
   --white: #ffffff;
+  --blue: #082C63;
 
   --font-family-presentation: 'Fredoka One', cursive;
+  --font: 'Istok Web', sans-serif; 
 }
 
 body {
