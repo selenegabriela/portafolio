@@ -2,15 +2,52 @@
 .absolute {
     position: absolute;
     background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* background-color: black; */
 }
 
-/* .absolute:before {
-    width: 100%;
+.absolute:before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
     height: 100%;
     content: '';
     position: absolute;
-    background-color: rgb(0, 0, 0, 0.5);
-} */
+    background-color: rgba(1, 0, 39, 0.726);
+    z-index: -1;
+    border-radius: 20px;
+}
+@media (max-width: 950px) {
+    .absolute:before {
+        margin-top: 2px;
+        background-color: rgba(1, 0, 39);
+        width: 120%;
+    }
+}
+.paragraph {
+    font-family: var(--font);
+    font-weight: bold;
+}
+.paragraphBgColor {
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(1, 0, 39);
+    font-size: 20px;
+    background-color: #ffd25c;
+    text-align: center;
+    width: 90%;
+    margin-left: 4.9%;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.paragraphBgColor:hover {
+    background-color: #ffc738;
+}
 
 .img {
     width: 50%;

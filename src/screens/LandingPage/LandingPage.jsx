@@ -17,7 +17,7 @@ const LandingPage = () => {
     setTimeout(() => {
       setShowWelcomeComponent(false)
       navigate('/home');
-    }, 5000)
+    }, 8000)
   }
 
   return (
@@ -25,14 +25,16 @@ const LandingPage = () => {
       {showWelcomeComponent && <Welcome/>}
       <div>
         <div className={s.flexNameImage}>
-          <div>
+          <div className={s.leftSide}>
             <img className={s.icons} src={iconUp} alt="icon" />
-            <p>Hola,</p>
-            <p>mi nombre es </p>
+            <div>
+              <p className={s.inlineParagraph}>Hi,</p>
+              <p className={s.inlineParagraph}>my name is </p>
+            </div>
             <img className={s.name} src={nameImage} alt="name" />
             <img className={s.icons} src={iconDown} alt="icon" />
           </div>
-          <div>
+          <div className={s.rightSide}>
             <img className={s.img} src={laptopImage} alt="laptop-icon"/>
           </div>
         </div>
@@ -41,7 +43,7 @@ const LandingPage = () => {
             <p className={s.position}>Fullstack web developer</p>
           </div>
           <button onClick={showWelcome}>
-            Continuar
+            Continue
           </button>
         </div>
         
