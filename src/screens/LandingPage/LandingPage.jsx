@@ -10,14 +10,17 @@ import Welcome from '../../components/Welcome/Welcome';
 const LandingPage = () => {
   const navigate = useNavigate();
   const [ showWelcomeComponent, setShowWelcomeComponent ] = useState(false);
+  const [ disabledButton, setDisabledButton ] = useState(false);
 
   const showWelcome = () => {
+    setDisabledButton(true);
     setShowWelcomeComponent(true);
-
+    
     setTimeout(() => {
       setShowWelcomeComponent(false)
       navigate('/home');
     }, 8000)
+    setDisabledButton(true);
   }
 
   return (
@@ -42,7 +45,7 @@ const LandingPage = () => {
           <div>
             <p className={s.position}>Fullstack web developer</p>
           </div>
-          <button onClick={showWelcome}>
+          <button disabled={disabledButton} onClick={showWelcome}>
             Continue
           </button>
         </div>

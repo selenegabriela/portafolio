@@ -10,7 +10,7 @@ const Welcome = () => {
             <p className={s.paragraph}>-Lorenzo di Medici</p>
         </div>
         <img className={s.img} src={picture} alt="me" />
-        <a href='/home' className={`${s.paragraph} ${s.paragraphBgColor}`}>Welcome to my profile</a>
+        <a href='/home' className={`${s.paragraph} ${s.paragraphBgColor}`}>Welcome to my Portfolio</a>
     </div>
   )
 }
