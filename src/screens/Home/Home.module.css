@@ -1,0 +1,14 @@
+.flexContent {
+    display: flex;
+}
+
+
+.containerLogo {
+    width: 100%;
+    /* position: fixed; */
+    background-color: var(--black);
+    /* margin-left: 65px; */
+}
+.logo {
+    width: 35%;
+}

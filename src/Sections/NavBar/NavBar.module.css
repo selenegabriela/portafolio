@@ -1,0 +1,13 @@
+.navbar {
+    height: 100vh;
+    position: fixed;
+    width: 70px;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+}
+.iconsContact {
+    margin: 10px;
+    margin-top: 20px;
+    width: 50px;
+}
