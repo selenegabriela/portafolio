@@ -15,21 +15,27 @@ const NavBar = () => {
   return (
     <div className={s.navbar}>
       <div className={s.btnAndOptions}>
-        <button onClick={handleShowOptions} className={s.btnCv}>
+        <button onClick={handleShowOptions} className={`${s.btnCv} ${showOptions ? s.active : ''}`}>
           <hr />
           <hr />
           <hr />
         </button>
         <div className={!showOptions ? s.hide : ''}>
-          <a className={s.options} href='#'>
-            <p>Home</p>
-          </a>
-          <a className={s.options} href='#'>
-            <p>Download CV in English</p>
-          </a>
-          <a className={s.options} href='#'>
-            <p>Download CV in Spanish</p>
-          </a>
+          <div className={s.containerOptions}>
+            <a className={s.options} href='#presentation'>
+              <p className={s.firstContainer}>Home</p>
+            </a>
+          </div>
+          <div className={s.containerOptions}>
+            <a className={s.options} href='https://drive.google.com/u/0/uc?id=1oGYdVO4nu1c_FwJnhhGUGDiCAYGqQFmM&export=download'>
+              <p>Download CV in English</p>
+            </a>
+          </div>
+          <div className={s.containerOptions}>
+            <a className={s.options} href='https://drive.google.com/u/0/uc?id=1BbBeSs2z0oGhO7iz0QseC9Pzq-1NNcAu&export=download'>
+              <p>Download CV in Spanish</p>
+            </a>
+          </div>
         </div>
       </div>
       <div className={s.navbarIcons}>

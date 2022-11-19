@@ -16,14 +16,31 @@
     background-color: var(--blue);
     font-size: 12px;
 }
-
+.containerOptions {
+    background-color: var(--gray);
+    border-bottom-style: solid;
+    border-bottom-color: blanchedalmond;
+    
+}
 .options {
     text-decoration: none;
     font-family: var(--font);
     color: var(--white);
 }
-.options:hover {
-    background-color: rgb(255, 251, 30);
+.options p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.firstContainer {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; 
+}
+.options:hover p {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: bold;
 }
 
 .hide {
@@ -42,8 +59,9 @@
     border-style: none;
 }
 
-.btnCv:hover {
-    background-color: rgb(255, 251, 30);
+.btnCv:hover,
+.active {
+    background-color: var(--yellow);
     cursor: pointer;
 }
 
@@ -52,7 +70,8 @@
     height: 2px;
     background-color: var(--white);
 }
-.btnCv:hover hr {
+.btnCv:hover hr,
+.active hr {
     background-color: var(--black);
     border-color: var(--black);
 }
