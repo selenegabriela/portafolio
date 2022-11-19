@@ -10,7 +10,7 @@ const Presentation = () => {
       </div>
       <div className={s.flexSection}>
         <div>
-          <div>
+          <div className={s.whoAmI}>
             <div>
               <h1>WHO AM I?</h1>
             </div>
