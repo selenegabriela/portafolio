@@ -1,13 +1,64 @@
 .navbar {
-    height: 100vh;
-    position: fixed;
-    width: 70px;
-    background-color: var(--gray);
     display: flex;
     flex-direction: column;
+    background-color: var(--gray);
+    height: 100vh;
+    width: 60px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.btnAndOptions {
+    width: 100%;
+    background-color: var(--blue);
+    font-size: 12px;
+}
+
+.options {
+    text-decoration: none;
+    font-family: var(--font);
+    color: var(--white);
+}
+.options:hover {
+    background-color: rgb(255, 251, 30);
+}
+
+.hide {
+    display: none;
+}
+
+.navbarIcons {
+    margin-bottom: 10px;
+}
+
+.btnCv {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--blue);
+    border-style: none;
+}
+
+.btnCv:hover {
+    background-color: rgb(255, 251, 30);
+    cursor: pointer;
+}
+
+.btnCv hr {
+    width: 25px;
+    height: 2px;
+    background-color: var(--white);
+}
+.btnCv:hover hr {
+    background-color: var(--black);
+    border-color: var(--black);
+}
+
 .iconsContact {
     margin: 10px;
     margin-top: 20px;
-    width: 50px;
+    width: 35px;
 }
