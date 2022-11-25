@@ -1,18 +1,60 @@
-
+section {
+    height: 100vh;
+}
+p, h2 {
+    font-family: var(--font);
+}
 .flexSection {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-rows: 1fr;
     background-color: var(--gray);
     width: 80%;
-    margin-left: 13%;
+    margin: 0 auto 0 12%;
     border-radius: 10px;
+    gap: 30px;
 }
 
 .whoAmI {
-    width: 32%;
+    margin-left: 60px;
+}
+.line {
+    height: 80%;
+    width: 3px;
+    background-color: var(--yellow);
+    margin-left: 60%;
+    margin-top: 35px;
+}
+.flexTechnologies {
+    display: flex;
+    justify-content: flex-start;
+}
+.technologies p {
+    text-align: start;
+}
+.technologies h2 {
+    text-align: start;
+    margin-left: 30px;
+}
+.ul {
+    list-style: none;
+}
+.ul:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+.flexIcon {
+    display: flex;
+}
+.iconSize {
+    width: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
+.expressMargin {
+    margin-bottom: 20px;
+}
 .containerLogo {
     width: 100%;
     /* position: fixed; */
@@ -20,7 +62,7 @@
     /* margin-left: 65px; */
 }
 .logo {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 30px;
     width: 35%;
     margin-left: 10%;

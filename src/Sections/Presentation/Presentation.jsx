@@ -1,5 +1,17 @@
 import React from 'react';
 import logo from '../../images/my-portfolio2.svg'
+import javascript from '../../images/javascript.svg'
+import react from '../../images/react.svg'
+import html from '../../images/html.svg'
+import css from '../../images/css.svg'
+import sass from '../../images/sass.svg'
+import graphql from '../../images/graphql.svg'
+import node from '../../images/node.svg'
+import express from '../../images/express.svg'
+import sequelize from '../../images/sequelize.svg'
+import mongodb from '../../images/mongodb.svg'
+import git from '../../images/git.svg'
+import github from '../../images/github.svg'
 import s from './Presentation.module.css'
 
 const Presentation = () => {
@@ -9,34 +21,75 @@ const Presentation = () => {
         <img className={s.logo} src={logo} alt="logo" />
       </div>
       <div className={s.flexSection}>
-        <div>
-          <div className={s.whoAmI}>
+        <div className={s.whoAmI}>
             <div>
-              <h1>WHO AM I?</h1>
+              <h2>WHO AM I?</h2>
             </div>
             <div>
-              <p>Una persona apasionada por aprender y crear con lo aprendido. Soy una desarrolladora web que llegó del mundo de las letras, donde todo puede ser posible, con la intención de plasmar (lo que ellas y la imaginación dictan) en el mundo de la virtualidad... pues como un grande y excelente profesor decía: "si puedes imaginarlo, puedes crearlo".</p>
+              <p>
+                I'm a very passionate person. I love learning and creating new stuff and I think programming is the perfect place to be if you love those things. But that's not all: I like accepting new challenges and I like findind the solution to especific problems: happiness after frustration, light after darkness, the reward you get after doing your best in a hard situation. Now you know who I am. Do you want to contact me?
+                Then <a href="">do it!</a>
+              </p>
             </div>
-          </div>
-          <div>
-            <h3>Mi nombre es Selene Amador Díaz y ha sido un gusto.</h3>
-          </div>
         </div>
-        <div>
-          <h2>TECNOLOGÍAS</h2>
+        <div className={s.line}></div>
+        <div className={s.technologies}>
+          <h2>TECHNOLOGIES</h2>
           <div>
-            <p>Actualmente manejo las siguientes tecnologías:</p>
+            <p>These are the technologies I know:</p>
           </div>
-          <div>
-            <ul>
-              <li>Javascript</li>
-              <li>React JS</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Node JS</li>
-              <li>Express</li>
-              <li>Sequelize</li>
-              <li>Mongo DB</li>
+          <div className={s.flexTechnologies}>
+            <ul className={s.ul}>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={javascript} alt="" />
+                <span>Javascript</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={react} alt="" />
+                <span>React JS</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={html} alt="" />
+                <span>HTML</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={css} alt="" />
+                <span>CSS</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={sass} alt="" />
+                <span>SASS</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={graphql} alt="" />
+                <span>Graphql</span>
+              </li>
+            </ul>
+            <ul className={s.ul}>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={node} alt="" />
+                <span>Node JS</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={`${s.iconSize} ${s.expressMargin}`} src={express} alt="" />
+                <span>Express</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={sequelize} alt="" />
+                <span>Sequelize</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={mongodb} alt="" />
+                <span>Mongo DB</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={git} alt="" />
+                <span>Git</span>
+              </li>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={github} alt="" />
+                <span>GitHub</span>
+              </li>
             </ul>
           </div>
         </div>
