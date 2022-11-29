@@ -1,6 +1,6 @@
 import React from 'react';
 import Presentation from '../../Sections/Presentation/Presentation';
-import Proyects from '../../Sections/Proyects/Proyects';
+import Projects from '../../Sections/Projects/Projects';
 import Interests from '../../Sections/Interests/Interests';
 import Footer from '../../Sections/Footer/Footer';
 import NavBar from '../../Sections/NavBar/NavBar';
@@ -15,7 +15,7 @@ const Home = () => {
       </div>
       <div>
         <Presentation />
-        <Proyects />
+        <Projects />
         <Interests />
         <Footer />
       </div>

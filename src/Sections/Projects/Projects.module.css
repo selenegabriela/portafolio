@@ -1,0 +1,52 @@
+section {
+    height: 100vh;
+}
+
+p, h2 {
+    font-family: var(--font);
+}
+
+.projectsLink {
+    text-decoration: none;
+    color: #244980;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.projectsLink:hover {
+    color: var(--blue);
+}
+
+.flexSection {
+    width: 80%;
+    margin: 100px auto 100px 12%;
+    background-color: var(--gray);
+    height: 85%;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.flexHeaderProjects {
+    display: flex;
+    justify-content: space-between;
+}
+.flexHeaderProjects img {
+    /* margin-right: 500px; */
+}
+.wrapApps {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.app {
+    flex: 30%;
+
+}
+
+.description {
+    font-size: 14.5px;
+    text-align: justify;
+}
