@@ -57,7 +57,7 @@ const Projects = () => {
               <img src={cryptocurrencies} width='300' height='150' alt="cryptocurrencies app" />
               <p>Cryptocurrencies Prices App</p>
             </a>
-            <p className={s.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies arcu sed risus commodo consectetur. Donec porta augue a justo rhoncus viverra.</p>
+            <p className={s.description}>This web app shows you the cryptocurrency prices in MXN, USD, Euro and GBP. This little project was made with React and Styled Components. I created Cutome hooks for the select and option tags.</p>
           </li>
         </ul>
       </div>
