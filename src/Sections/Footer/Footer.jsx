@@ -1,6 +1,10 @@
+/* eslint-disable no-control-regex */
 import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser'
 import Error from "../../components/Error/Error";
+import emailImage from '../../images/mail.png'
+import logo from '../../images/my-portfolio2.svg'
+import s from './Footer.module.css'
 
 const Footer = () => {
 
@@ -8,61 +12,120 @@ const Footer = () => {
   const [ email, setEmail ] = useState('');
   const [ subject, setSubject ] = useState('');
   const [ message, setMessage ] = useState('');
-  const [ error, setError ] = useState({});
+  const [ errorFields, setErrorFields ] = useState('');
+  const [ errorEmail, setErrorEmail ] = useState('');
+  
 
   const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if([name, email, message].includes('')){
-      console.log(error)
-      return setError({...error,
-        allFields: 'Please, fill up all the required fields.'
-      });
-    }
+    // eslint-disable-next-line no-useless-escape
+    const regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
 
-    emailjs.sendForm('service_9tca8jm', 'template_au1soah', form.current, 'Dhza5zpZuHAMh80lM')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    const fields = [name, email, message].includes('');
+    const regexAccepted = !regex.test(email)
+
+    if(fields || regexAccepted){
+      if(fields){
+        setErrorFields('Please, fill up all the required fields.');
+        setTimeout(() => {
+          setErrorFields('');
+        }, 3000);
+      } 
+      if(regexAccepted) {
+        setErrorEmail('Invalid Email.');
+        setTimeout(() => {
+          setErrorEmail('');
+        }, 3000);
+      }
+      return
+    }
+      // emailjs.sendForm('service_9tca8jm', 'template_au1soah', form.current, 'Dhza5zpZuHAMh80lM')
+      //   .then((result) => {
+        //       console.log(result.text);
+        //   }, (error) => {
+      //       console.log(error.text);
+      //   });
+
+
+    setName('') 
+    setEmail('') 
+    setSubject('') 
+    setMessage('') 
+    setErrorEmail('')
+    setErrorFields('')
   };
 
   return (
-    <footer>
-      <div>
-        <h2>CONTÁCTAME</h2>
-      </div>
-      <div>
-        <div>
-          <p>“If opportunity doesn’t knock, build a door.”</p>
-          <p>– Milton Berle</p>
+    <footer className={s.section} id='contact-me'>
+        <div className={s.flexHeaderFooter}>
+          <a href="#presentation">
+            <img src={logo} width='100' alt="home" />
+          </a>
+          <h2>CONTACT ME</h2>
+          <div></div>
         </div>
-        <div>
+      <div className={s.contentFlex}>
+        <div className={s.image}>
+          <img src={emailImage} alt="mail" />
+        </div>
+        <div className={s.data}>
           <div>
-            <p>Redes</p>
+            <p>Selene Gabriela Amador Díaz: </p>
+            <p></p>
+            <p>WhatsApp: <span>+52 5532474093</span></p>
+            <p>Email: <span>sel_nn@hotmail.com</span></p>
           </div>
           <div>
-            {error.allFields && <Error>{error.allFields}</Error>}
+            {errorFields && <Error>{errorFields}</Error>}
+            {errorEmail && <Error>{errorEmail}</Error>}
             <form onSubmit={sendEmail} ref={form}>
               <legend>Send me an Email!</legend>
               <div>
                 <label htmlFor="name">Full Name: </label>
-                <input name='name' id='name' type="text" placeholder="Full Name" />
+                <input 
+                  value={name} 
+                  name='name' 
+                  id='name' 
+                  type="text" 
+                  placeholder="Full Name"
+                  onChange={e => setName(e.target.value)} 
+                />
               </div>
               <div>
                 <label htmlFor="email">Email: </label>
-                <input name='email' id='email' type="text" placeholder="Email" />
+                <input 
+                  value={email} 
+                  name='email' 
+                  id='email' 
+                  type="text" 
+                  placeholder="Email"
+                  onChange={e => setEmail(e.target.value)}  
+                />
               </div>
               <div>
                 <label htmlFor="subject">Subject: </label>
-                <input name='subject' id='subject' type="text" placeholder="Subject" />
+                <input 
+                  value={subject} 
+                  name='subject' 
+                  id='subject' 
+                  type="text" 
+                  placeholder="Subject"
+                  onChange={e => setSubject(e.target.value)}  
+                />
               </div>
               <div>
                 <label htmlFor="message">Message: </label>
-                <input name='message' id='message' type="textarea" placeholder="Type your message..." />
+                <input 
+                  value={message} 
+                  name='message' 
+                  id='message' 
+                  type="textarea" 
+                  placeholder="Type your message..."
+                  onChange={e => setMessage(e.target.value)}  
+                />
               </div>
 
               <div>

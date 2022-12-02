@@ -1,0 +1,37 @@
+.contactMeH2 {
+    padding-top: 50px;
+}
+.section{
+    background-color: var(--gray);
+    height: 90vh;
+    margin-left: 60px;
+    border-left-style: solid;
+    border-left-color: var(--black);
+    border-right-style: solid;
+    border-right-color: var(--black);
+    margin-bottom: 30px;
+}
+.flexHeaderFooter {
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+}
+.flexHeaderFooter img {
+    margin: 20px 0 0 30px;
+}
+.flexHeaderFooter h2 {
+    margin-left: -100px;
+    margin-bottom: 80px;
+}
+.contentFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    flex: 30%
+}
+
+.data {
+    flex: 40%
+}
