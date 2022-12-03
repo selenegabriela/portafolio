@@ -29,9 +29,29 @@
 }
 
 .image {
-    flex: 30%
+    flex: 30%;
+    border-right-style: solid;
+    border-right-color: var(--yellow);
+    border-right-width: 3px;
+    padding-right: 20px;
+}
+/* .lineContactMe {
+    width: 3px;
+    background-color: var(--yellow);
+    margin-top: -20px;
+} */
+.data {
+    flex: 30%;
+    margin-top: -30px; 
 }
 
-.data {
-    flex: 40%
+.label {
+    display: block
+}
+
+.inputData {
+    width: 210px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
 }

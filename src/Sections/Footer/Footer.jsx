@@ -82,10 +82,11 @@ const Footer = () => {
             {errorFields && <Error>{errorFields}</Error>}
             {errorEmail && <Error>{errorEmail}</Error>}
             <form onSubmit={sendEmail} ref={form}>
-              <legend>Send me an Email!</legend>
+              <legend>Send me a Message!</legend>
               <div>
-                <label htmlFor="name">Full Name: </label>
-                <input 
+                <label className={s.label} htmlFor="name">*Full Name: </label>
+                <input
+                  className={s.inputData} 
                   value={name} 
                   name='name' 
                   id='name' 
@@ -95,8 +96,9 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email">Email: </label>
-                <input 
+                <label className={s.label} htmlFor="email">*Email: </label>
+                <input
+                  className={s.inputData} 
                   value={email} 
                   name='email' 
                   id='email' 
@@ -106,8 +108,9 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <label htmlFor="subject">Subject: </label>
-                <input 
+                <label className={s.label} htmlFor="subject">Subject: </label>
+                <input
+                  className={s.inputData} 
                   value={subject} 
                   name='subject' 
                   id='subject' 
@@ -117,8 +120,9 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message">Message: </label>
-                <input 
+                <label className={s.label} htmlFor="message">*Message: </label>
+                <input
+                  className={s.inputData} 
                   value={message} 
                   name='message' 
                   id='message' 
