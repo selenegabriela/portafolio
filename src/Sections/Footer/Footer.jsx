@@ -73,39 +73,41 @@ const Footer = () => {
         </div>
         <div className={s.data}>
           <div>
-            <p>Selene Gabriela Amador Díaz: </p>
+            <p className={s.myName}>Selene Gabriela Amador Díaz: </p>
             <p></p>
-            <p>WhatsApp: <span>+52 5532474093</span></p>
-            <p>Email: <span>sel_nn@hotmail.com</span></p>
+            <p className={s.phoneEmail}>WhatsApp: <span>+52 5532474093</span></p>
+            <p className={s.phoneEmail}>Email: <span>sel_nn@hotmail.com</span></p>
           </div>
           <div>
             {errorFields && <Error>{errorFields}</Error>}
             {errorEmail && <Error>{errorEmail}</Error>}
             <form onSubmit={sendEmail} ref={form}>
               <legend>Send me a Message!</legend>
-              <div>
-                <label className={s.label} htmlFor="name">*Full Name: </label>
-                <input
-                  className={s.inputData} 
-                  value={name} 
-                  name='name' 
-                  id='name' 
-                  type="text" 
-                  placeholder="Full Name"
-                  onChange={e => setName(e.target.value)} 
-                />
-              </div>
-              <div>
-                <label className={s.label} htmlFor="email">*Email: </label>
-                <input
-                  className={s.inputData} 
-                  value={email} 
-                  name='email' 
-                  id='email' 
-                  type="text" 
-                  placeholder="Email"
-                  onChange={e => setEmail(e.target.value)}  
-                />
+              <div className={s.nameEmail}>
+                <div className={s.containerNameEmail}>
+                  <label className={s.label} htmlFor="name">*Full Name: </label>
+                  <input
+                    className={s.inputData} 
+                    value={name} 
+                    name='name' 
+                    id='name' 
+                    type="text" 
+                    placeholder="Full Name"
+                    onChange={e => setName(e.target.value)} 
+                  />
+                </div>
+                <div className={s.containerNameEmail}>
+                  <label className={s.label} htmlFor="email">*Email: </label>
+                  <input
+                    className={s.inputData} 
+                    value={email} 
+                    name='email' 
+                    id='email' 
+                    type="text" 
+                    placeholder="Email"
+                    onChange={e => setEmail(e.target.value)}  
+                  />
+                </div>
               </div>
               <div>
                 <label className={s.label} htmlFor="subject">Subject: </label>
@@ -121,19 +123,18 @@ const Footer = () => {
               </div>
               <div>
                 <label className={s.label} htmlFor="message">*Message: </label>
-                <input
+                <textarea
                   className={s.inputData} 
                   value={message} 
                   name='message' 
                   id='message' 
-                  type="textarea" 
                   placeholder="Type your message..."
                   onChange={e => setMessage(e.target.value)}  
                 />
               </div>
 
-              <div>
-                <input type="submit" value="Send Message" />
+              <div className={s.containerInputSubmit}>
+                <input className={s.inputSubmit} type="submit" value="Send Message" />
               </div>
             </form>
           </div>

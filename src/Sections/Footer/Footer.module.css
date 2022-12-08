@@ -1,3 +1,18 @@
+form {
+    text-align: start;
+    margin-left: 120px;
+}
+legend {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.myName {
+    font-size: 20px;
+    font-weight: 700;
+    /* font-family: var(--font-family-presentation) !important; */
+}
+
 .contactMeH2 {
     padding-top: 50px;
 }
@@ -41,17 +56,55 @@
     margin-top: -20px;
 } */
 .data {
+    margin-left: -50px;
     flex: 30%;
-    margin-top: -30px; 
+    margin-top: -55px; 
+}
+
+.phoneEmail {
+    margin: 0;
+}
+
+.phoneEmail:last-child {
+    margin-bottom: 30px;
 }
 
 .label {
     display: block
 }
 
+/* .nameEmail .inputData {
+    width: 90%;
+} */
+
 .inputData {
-    width: 210px;
+    width: 90%;
+    max-width: 400px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-style: none;
+    margin-bottom: 10px;
+}
+.nameEmail {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    width: 100%;
+}
+.containerInputSubmit {
+    width: 100%;
+}
+.inputSubmit {
+    width: 90%;
+    height: 40px;
+    background-color: var(--blue);
+    max-width: 400px;
+    color: var(--white);
+    text-transform: uppercase;
+    border-style: none;
+}
+
+.inputSubmit:hover {
+    cursor: pointer;
+    background-color: #07244e;
 }

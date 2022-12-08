@@ -1,3 +1,8 @@
-div {
+.div {
     color: white;
+    width: 65%;
+    background-color: rgba(255, 23, 23, 0.897);
+    margin-left: 120px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
