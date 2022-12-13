@@ -20,7 +20,7 @@ const NavBar = () => {
           <hr />
           <hr />
         </button>
-        <div className={!showOptions ? s.hide : ''}>
+        <div className={!showOptions ? s.hide : s.show}>
           <div className={s.containerOptions}>
             <a className={s.options} href='#presentation'>
               <p className={s.firstContainer}>Home</p>

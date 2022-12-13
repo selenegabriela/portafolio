@@ -15,8 +15,32 @@ p, h2 {
     gap: 30px;
 }
 
+@media (max-width: 900px) {
+    .flexSection {
+        grid-template-columns: 1fr .1fr 1fr;
+        margin-left: 80px;
+        width: 85%;
+    }
+}
+@media (max-width: 700px) {
+    .flexSection {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
 .whoAmI {
     margin-left: 60px;
+}
+
+@media (max-width: 700px) {
+    .whoAmI {
+        margin: 0 20px 0 20px;
+    }
+    .whoAmI p {
+        text-align: justify;
+    }
 }
 .line {
     height: 80%;
@@ -24,6 +48,11 @@ p, h2 {
     background-color: var(--yellow);
     margin-left: 60%;
     margin-top: 35px;
+}
+@media (max-width: 700px) {
+    .line {
+        display: none;
+    }
 }
 .flexTechnologies {
     display: flex;
