@@ -56,11 +56,11 @@ const Presentation = () => {
                 <img className={s.iconSize} src={css} alt="" />
                 <span>CSS</span>
               </li>
-              <li className={s.flexIcon}>
+              <li className={`${s.flexIcon} ${s.hideMobile}`}>
                 <img className={s.iconSize} src={sass} alt="" />
                 <span>SASS</span>
               </li>
-              <li className={s.flexIcon}>
+              <li className={`${s.flexIcon} ${s.hideMobile}`}>
                 <img className={s.iconSize} src={graphql} alt="" />
                 <span>Graphql</span>
               </li>
@@ -82,11 +82,29 @@ const Presentation = () => {
                 <img className={s.iconSize} src={mongodb} alt="" />
                 <span>Mongo DB</span>
               </li>
-              <li className={s.flexIcon}>
+              <li className={`${s.flexIcon} ${s.hideMobile}`}>
                 <img className={s.iconSize} src={git} alt="" />
                 <span>Git</span>
               </li>
-              <li className={s.flexIcon}>
+              <li className={`${s.flexIcon} ${s.hideMobile}`}>
+                <img className={s.iconSize} src={github} alt="" />
+                <span>GitHub</span>
+              </li>
+            </ul>
+            <ul className={s.ul}>
+              <li className={`${s.flexIcon} ${s.showMobile}`}>
+                <img className={s.iconSize} src={sass} alt="" />
+                <span>SASS</span>
+              </li>
+              <li className={`${s.flexIcon} ${s.showMobile}`}>
+                <img className={s.iconSize} src={graphql} alt="" />
+                <span>Graphql</span>
+              </li>
+              <li className={`${s.flexIcon} ${s.showMobile}`}>
+                <img className={s.iconSize} src={git} alt="" />
+                <span>Git</span>
+              </li>
+              <li className={`${s.flexIcon} ${s.showMobile}`}>
                 <img className={s.iconSize} src={github} alt="" />
                 <span>GitHub</span>
               </li>
