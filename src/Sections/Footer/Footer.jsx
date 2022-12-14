@@ -72,7 +72,7 @@ const Footer = () => {
           <img src={emailImage} alt="mail" />
         </div>
         <div className={s.data}>
-          <div>
+          <div className={s.dataNameNumberEmail}>
             <p className={s.myName}>Selene Gabriela Amador Díaz: </p>
             <p></p>
             <p className={s.phoneEmail}>WhatsApp: <span>+52 5532474093</span></p>
