@@ -42,12 +42,12 @@ const Footer = () => {
       }
       return
     }
-      // emailjs.sendForm('service_9tca8jm', 'template_au1soah', form.current, 'Dhza5zpZuHAMh80lM')
-      //   .then((result) => {
-        //       console.log(result.text);
-        //   }, (error) => {
-      //       console.log(error.text);
-      //   });
+      emailjs.sendForm('service_9tca8jm', 'template_au1soah', form.current, 'Dhza5zpZuHAMh80lM')
+        .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+        });
 
 
     setName('') 
