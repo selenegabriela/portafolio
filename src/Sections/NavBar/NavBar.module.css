@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 
@@ -48,6 +49,11 @@
     margin-bottom: 0;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+@media (max-width: 600px) {
+    .options p {
+        font-size: 12px;
+    }
 }
 .firstContainer {
     padding-top: 10px !important;
@@ -96,6 +102,9 @@
        height: 50px;
        padding: 5px 0;
    }
+   .btnCv hr {
+    height: 1px;
+   }
 }
 .btnCv:hover hr,
 .active hr {
@@ -107,4 +116,9 @@
     margin: 10px;
     margin-top: 20px;
     width: 35px;
+}
+@media (max-width: 600px) {
+    .iconsContact {
+        width: 30px;
+    }
 }

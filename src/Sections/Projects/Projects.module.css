@@ -31,6 +31,17 @@ p, h2 {
     border-radius: 10px;
     overflow-y: scroll;
 }
+@media (max-width: 900px) {
+    .flexSection {
+        margin-left: 80px;
+        width: 85%;
+    }
+}
+@media (max-width: 600px) {
+    .flexSection {
+        margin-left: 35px;
+    }
+}
 
 .flexHeaderProjects {
     display: flex;
@@ -42,6 +53,12 @@ p, h2 {
 }
 .flexHeaderProjects img {
     margin: 20px 0 0 30px;
+}
+@media (max-width: 700px) {
+    .flexHeaderProjects img {
+        width: 85px;
+        margin-top: 10px;
+    }
 }
 .flexHeaderProjects h2 {
     margin-left: -100px;
@@ -57,12 +74,21 @@ p, h2 {
 
 .app {
     flex: 30%;
-
+}
+@media (max-width: 700px) {
+    .app a p {
+        font-size: 14.5px;
+    }
 }
 
 .description {
     font-size: 14.5px;
     text-align: justify;
+}
+@media (max-width: 700px) {
+    .description {
+        font-size: 14px;
+    }
 }
 
 ::-webkit-scrollbar {
