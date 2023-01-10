@@ -5,6 +5,7 @@ import Error from "../../components/Error/Error";
 import emailImage from '../../images/mail.png'
 import logo from '../../images/my-portfolio2.svg'
 import s from './Footer.module.css'
+import Success from "../../components/Success/Success";
 
 const Footer = () => {
 
@@ -14,6 +15,7 @@ const Footer = () => {
   const [ message, setMessage ] = useState('');
   const [ errorFields, setErrorFields ] = useState('');
   const [ errorEmail, setErrorEmail ] = useState('');
+  const [ success, setSuccess ] = useState(false);
   
 
   const form = useRef()
@@ -48,7 +50,10 @@ const Footer = () => {
           }, (error) => {
             console.log(error.text);
         });
-
+    
+    setTimeout(() => {
+      setSuccess(false)
+    }, 3000);
 
     setName('') 
     setEmail('') 
@@ -81,6 +86,7 @@ const Footer = () => {
           <div>
             {errorFields && <Error>{errorFields}</Error>}
             {errorEmail && <Error>{errorEmail}</Error>}
+            {success && <Success>Email sent successfully</Success>}
             <form onSubmit={sendEmail} ref={form}>
               <legend>Send me a Message!</legend>
               <div className={s.nameEmail}>
