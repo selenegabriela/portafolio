@@ -23,6 +23,14 @@ p, h2 {
     gap: 30px;
 }
 
+@media (max-width: 400px) {
+    .flexSection {
+        width: 95% !important;
+        margin: auto 1px;
+        margin-left: 5px !important;
+    }
+}
+
 @media (max-width: 900px) {
     .flexSection {
         grid-template-columns: 1fr .1fr 1fr;

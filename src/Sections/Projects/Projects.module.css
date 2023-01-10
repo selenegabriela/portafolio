@@ -31,6 +31,13 @@ p, h2 {
     border-radius: 10px;
     overflow-y: scroll;
 }
+@media (max-width: 400px) {
+    .flexSection {
+        width: 95% !important;
+        margin: auto 1px;
+        margin-left: 5px !important;
+    }
+}
 @media (max-width: 900px) {
     .flexSection {
         margin-left: 80px;
