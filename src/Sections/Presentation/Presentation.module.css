@@ -57,6 +57,14 @@ p, h2 {
     margin-left: 60px;
 }
 
+.doIt {
+    text-decoration-color: var(--yellow);
+    color: #244980;
+    font-weight: 700;
+}
+.doIt:hover {
+    color: var(--blue);
+}
 @media (max-width: 700px) {
     .whoAmI {
         margin: 0 20px 0 20px;

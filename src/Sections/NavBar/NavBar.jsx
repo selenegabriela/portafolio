@@ -22,8 +22,8 @@ const NavBar = () => {
         </button>
         <div className={!showOptions ? s.hide : s.show}>
           <div className={s.containerOptions}>
-            <a className={s.options} href='#presentation'>
-              <p className={s.firstContainer}>Home</p>
+            <a className={s.options} href='#contact-me'>
+              <p className={s.firstContainer}>Contact Me</p>
             </a>
           </div>
           <div className={s.containerOptions}>

@@ -27,8 +27,8 @@ const Presentation = () => {
             </div>
             <div>
               <p>
-                I'm a very passionate person. I love learning and creating new stuff and I think programming is the perfect place to be if you love those things. But that's not all: I like accepting new challenges and I like findind the solution to especific problems: happiness after frustration, light after darkness, the reward you get after doing your best in a hard situation. Now you know who I am. Do you want to contact me?
-                Then <a href="#contact-me">do it!</a>
+                I'm a very passionate person. I love learning and creating new stuff and I think programming is the perfect place to be if you love those things. But that's not all: I like accepting new challenges and I like finding the solution to especific problems: happiness after frustration, light after darkness, the reward you get after doing your best in a hard situation. Now you know who I am. Do you want to contact me?
+                Then <a className={s.doIt} href="#contact-me">do it!</a>
               </p>
             </div>
         </div>
