@@ -51,6 +51,7 @@ const Footer = () => {
             console.log(error.text);
         });
     
+    setSuccess(true);
     setTimeout(() => {
       setSuccess(false)
     }, 3000);
