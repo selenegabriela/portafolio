@@ -11,7 +11,7 @@ const Projects = () => {
     <section>
       <div className={s.flexSection}>
         <div className={s.flexHeaderProjects}>
-          <a target='_blank' href="#presentation">
+          <a target='_blank' rel="noreferrer" href="#presentation">
             <img src={logo} width='100' alt="home" />
           </a>
           <h2>PROJECTS</h2>
@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
         <ul className={s.wrapApps}>
           <li className={s.app}>
-            <a target='_blank' className={s.projectsLink} href='https://my-amazona-app-sgad.herokuapp.com/'>
+            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://my-amazona-app-sgad.herokuapp.com/'>
               <img src={amazona} width='300' height='150' alt="amazona app" />
               <p>Amazona app</p>
             </a>
@@ -32,7 +32,7 @@ const Projects = () => {
             administrators can do all of the above and add products, modify or delete them. In addition, they have the option to delete orders or mark them as delivered.</p>
           </li>
           <li className={s.app}>
-            <a target='_blank' className={s.projectsLink} href='https://expenses-control-sgad.netlify.app/'>
+            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://expenses-control-sgad.netlify.app/'>
               <img src={budgetControl} width='300' height='150' alt="budget control app" />
               <p>Budget Control App</p>
             </a>
@@ -41,7 +41,7 @@ const Projects = () => {
             It was done with React, CSS and I used the local storage to keep the data.</p>
           </li>
           <li className={s.app}>
-            <a target='_blank' className={s.projectsLink} href='https://veterinary-dates-react.netlify.app/'>
+            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://veterinary-dates-react.netlify.app/'>
               <img src={veterinaryDates} width='300' height='150' alt="veterinary dates app" />
               <p>Veterinary Dates App</p>
             </a>
@@ -53,7 +53,7 @@ const Projects = () => {
             The goal of this project is to monitor the patients of a veterinary: to register their name, their symptoms, if they were discharged, etc.</p>
           </li>
           <li className={s.app}>
-            <a target='_blank' className={s.projectsLink} href='https://cryptocurrencies-prices-sgad.netlify.app/'>
+            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://cryptocurrencies-prices-sgad.netlify.app/'>
               <img src={cryptocurrencies} width='300' height='150' alt="cryptocurrencies app" />
               <p>Cryptocurrencies Prices App</p>
             </a>
