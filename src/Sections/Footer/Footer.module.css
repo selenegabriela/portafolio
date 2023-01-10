@@ -40,9 +40,9 @@ legend {
 
 @media (max-width: 400px) {
     .section {
-        width: 95%;
-        margin: auto 1px;
-        margin-left: 10px;
+        width: 98%;
+        margin: 0 auto;
+        border-width: 0;
     }
 }
 @media (max-width: 600px) {
@@ -63,9 +63,20 @@ legend {
 .flexHeaderFooter img {
     margin: 20px 0 0 30px;
 }
+
+@media (max-width: 400px) {
+    .flexHeaderFooter img {
+        margin-top: 10px;
+    }
+}
 .flexHeaderFooter h2 {
     margin-left: -100px;
     margin-bottom: 80px;
+}
+@media (max-width: 400px) {
+    .flexHeaderFooter h2 {
+        margin-left: -60px;
+    }
 }
 .contentFlex {
     display: flex;
@@ -101,6 +112,12 @@ legend {
     .section {
         margin-bottom: 0;
         height: 100vh;
+    }
+}
+@media (max-width: 400px) {
+    .section {
+        margin-bottom: 0;
+        height: 90vh;
     }
 }
 
