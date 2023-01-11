@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
         <ul className={s.wrapApps}>
           <li className={s.app}>
-            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://my-amazona-app-sgad.herokuapp.com/'>
+            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://amazona-mern-app.onrender.com/'>
               <img src={amazona} width='300' height='150' alt="amazona app" />
               <p>Amazona app</p>
             </a>
