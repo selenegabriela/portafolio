@@ -97,8 +97,8 @@ p, h2 {
     .app {
         margin-left: -20px;
     }
-    .app a {
-        font-size: 18px;
+    .app a p {
+        font-size: 17px !important;
     }
 }
 @media (max-width: 700px) {
