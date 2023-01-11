@@ -12,7 +12,7 @@ const Projects = () => {
     <section>
       <div className={s.flexSection}>
         <div className={s.flexHeaderProjects}>
-          <a target='_blank' rel="noreferrer" href="#presentation">
+          <a href="#presentation">
             <img src={logo} width='100' alt="home" />
           </a>
           <h2>PROJECTS</h2>
