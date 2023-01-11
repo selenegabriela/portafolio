@@ -3,6 +3,7 @@ import amazona from '../../images/1.png'
 import budgetControl from '../../images/2.png'
 import veterinaryDates from '../../images/3.png'
 import cryptocurrencies from '../../images/4.png'
+import crm from '../../images/5.png'
 import logo from '../../images/my-portfolio2.svg'
 import s from './Projects.module.css'
 
@@ -39,6 +40,15 @@ const Projects = () => {
             <p className={s.description}>This is a budget control. You enter a budget and you can add expenses in order to control it. It's possible to create, get, edit and deletet these expenses (CRUD). And you can delete and edit them if you swipe left and right respectively.
 
             It was done with React, CSS and I used the local storage to keep the data.</p>
+          </li>
+          <li className={s.app}>
+            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://crm-json-server.netlify.app/'>
+              <img src={crm} width='300' height='150' alt="crm app" />
+              <p>Customer Relationship Management (CRM)</p>
+            </a>
+            <p className={s.description}>This is a Customer Relationship Management (CRM). Here you can create, delete, update and get the data (CRUD).
+
+To develope this project I used React, React router dom, Tailwind CSS and JSON Server.</p>
           </li>
           <li className={s.app}>
             <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://veterinary-dates-react.netlify.app/'>
