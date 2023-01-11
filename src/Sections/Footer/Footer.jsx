@@ -81,7 +81,7 @@ const Footer = () => {
           <div className={s.dataNameNumberEmail}>
             <p className={s.myName}>Selene Gabriela Amador Díaz: </p>
             <p></p>
-            <p className={s.phoneEmail}>WhatsApp: <span>+52 5532474093</span></p>
+            <p className={s.phoneEmail}>WhatsApp: <span>+52 5532477093</span></p>
             <p className={s.phoneEmail}>Email: <span>sel_nn@hotmail.com</span></p>
           </div>
           <div>
