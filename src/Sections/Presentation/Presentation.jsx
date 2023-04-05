@@ -27,8 +27,8 @@ const Presentation = () => {
             </div>
             <div>
               <p>
-              I am a highly passionate individual who loves to learn and create new things, and I believe that programming is the perfect field for those who share these passions. I thrive on accepting new challenges and finding solutions to specific problems. The sense of satisfaction that comes from overcoming frustration and discovering the light at the end of the tunnel is what drives me. If you're interested in getting in touch with me,
-              don't hesitate: <a className={s.doIt} href="#contact-me">contact me!</a>
+              I am a highly passionate individual who loves to learn and create new things, and I believe that programming is the perfect field for those who share these passions. I enjoy tackling challenges and finding solutions to problems: the sense of satisfaction that comes from overcoming frustration and discovering the light at the end of the tunnel. Interested?
+              Don't hesitate: <a className={s.doIt} href="#contact-me">contact me!</a>
               </p>
             </div>
         </div>
