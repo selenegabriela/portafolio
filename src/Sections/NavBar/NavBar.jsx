@@ -36,7 +36,7 @@ const NavBar = () => {
               <p>Download CV in Spanish</p>
             </a>
           </div>
-          <div className={s.containerOptions}>
+          <div style={{display: 'none'}} className={s.containerOptions}>
             <a className={s.options} href='https://drive.google.com/u/0/uc?id=1BjsVdIg1GlT2xajxZ_xhiXbGnMNWwmvk&export=download'>
               <p>Download CV in Italian</p>
             </a>

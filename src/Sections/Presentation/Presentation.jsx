@@ -12,6 +12,7 @@ import sequelize from '../../images/sequelize.svg'
 import mongodb from '../../images/mongodb.svg'
 import git from '../../images/git.svg'
 import github from '../../images/github.svg'
+import python from '../../images/python.svg'
 import s from './Presentation.module.css'
 
 const Presentation = () => {
@@ -40,6 +41,10 @@ const Presentation = () => {
           </div>
           <div className={s.flexTechnologies}>
             <ul className={s.ul}>
+              <li className={s.flexIcon}>
+                <img className={s.iconSize} src={python} alt="" />
+                <span>Python</span>
+              </li>
               <li className={s.flexIcon}>
                 <img className={s.iconSize} src={javascript} alt="" />
                 <span>Javascript</span>

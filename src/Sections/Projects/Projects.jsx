@@ -1,9 +1,9 @@
 import React from "react";
 import amazona from '../../images/1.png'
-import budgetControl from '../../images/2.png'
 import veterinaryDates from '../../images/3.png'
 import cryptocurrencies from '../../images/4.png'
 import crm from '../../images/5.png'
+import PFT from '../../images/6.jpg'
 import logo from '../../images/my-portfolio2.svg'
 import s from './Projects.module.css'
 
@@ -24,31 +24,43 @@ const Projects = () => {
               <img src={amazona} width='300' height='150' alt="amazona app" />
               <p>Amazona app</p>
             </a>
-            <p className={s.description}>E-commerce similar to Amazon. I used: MongoDB, Express, Node, React, Redux, HTML and CSS. Its main characteristics are:
-            CRUD: We can create, get, update and delete data;
-            there is an administrator view and a user view;
-            Paypal payment system;
-            authentication;
-            users can register, modify their profile, add products to the cart and pay for those products, and
-            administrators can do all of the above and add products, modify or delete them. In addition, they have the option to delete orders or mark them as delivered.</p>
+            <p className={s.description}>A comprehensive e-commerce platform inspired by Amazon, designed with React, Node.js, Express, MongoDB, Redux, HTML, and CSS. This app offers a full-featured shopping experience for both users and administrators.
+
+            <br/><br/>Features: 
+            <br/>✔️ User authentication and profile management
+            <br/>✔️ Browse, add to cart, and purchase products with PayPal integration
+            <br/>✔️ Admin panel for product management (add, update, delete)
+            <br/>✔️ Manage orders (mark as delivered, delete)
+            <br/>✔️ CRUD operations for products, users, and orders
+            <br/>✔️ Secure, user-friendly interface with both admin and user views</p>
           </li>
           <li className={s.app}>
-            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://expenses-control-sgad.netlify.app/'>
-              <img src={budgetControl} width='300' height='150' alt="budget control app" />
-              <p>Budget Control App</p>
+            <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://personal-finance-tracker-sgad.netlify.app/dashboard'>
+              <img src={PFT} width='300' height='150' alt="personal finance tracker app" />
+              <p>Personal Finance Tracker</p>
             </a>
-            <p className={s.description}>This is a budget control. You enter a budget and you can add expenses in order to control it. It's possible to create, get, edit and deletet these expenses (CRUD). And you can delete and edit them if you swipe left and right respectively.
+            <p className={s.description}>A web application designed to help users track income and expenses, visualize spending patterns, and set budget goals. Built with React.js (frontend) and Node.js with Express (backend), the app provides an intuitive dashboard for financial management.
 
-            It was done with React, CSS and I used the local storage to keep the data.</p>
+            <br/><br/>Features:
+            <br/>✔️ Add, edit, and delete income & expenses
+            <br/>✔️ Real-time dashboard with financial insights
+            <br/>✔️ Secure authentication & user data protection
+            <br/>✔️ Interactive charts for spending analysis
+            <br/>✔️ Budget goal-setting by category
+            </p>
           </li>
           <li className={s.app}>
             <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://crm-json-server.netlify.app/'>
               <img src={crm} width='300' height='150' alt="crm app" />
-              <p>Customer Relationship Management (CRM)</p>
+              <p>Customer Relationship Management</p>
             </a>
-            <p className={s.description}>This is a Customer Relationship Management (CRM). Here you can create, delete, update and get the data (CRUD).
+            <p className={s.description}>A robust Customer Relationship Management (CRM) system built with React, React Router DOM, Tailwind CSS, and JSON Server. This application allows efficient management of customer data.
 
-To develope this project I used React, React router dom, Tailwind CSS and JSON Server.</p>
+            <br/><br/><br/>Features: 
+            <br/>✔️ Create, read, update, and delete customer information (CRUD)
+            <br/>✔️ Intuitive user interface with responsive design
+            <br/>✔️ Seamless navigation with React Router DOM
+            <br/>✔️ Easy data management using JSON Server as the backend</p>
           </li>
           <li className={s.app}>
             <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://veterinary-dates-react.netlify.app/'>
@@ -56,18 +68,26 @@ To develope this project I used React, React router dom, Tailwind CSS and JSON S
               <p>Veterinary Dates App</p>
             </a>
             <p className={s.description}>
-            This project was made with React and Tailwindcss.
+            A veterinary patient management system built with React and Tailwind CSS, using local storage to persist changes. This app enables the tracking and management of veterinary patient data.
 
-            I used localstorage to keep the changes and it has a CRUD inside.
-
-            The goal of this project is to monitor the patients of a veterinary: to register their name, their symptoms, if they were discharged, etc.</p>
+            <br/><br/>Features: 
+            <br/>✔️ Add, update, and delete patient records (CRUD)
+            <br/>✔️ Track patient information such as name, symptoms, and discharge status
+            <br/>✔️ Responsive and user-friendly interface with Tailwind CSS
+            <br/>✔️ Data stored in local storage for easy access and persistence</p>
           </li>
           <li className={s.app}>
             <a target='_blank' rel="noreferrer" className={s.projectsLink} href='https://cryptocurrencies-prices-sgad.netlify.app/'>
               <img src={cryptocurrencies} width='300' height='150' alt="cryptocurrencies app" />
               <p>Cryptocurrencies Prices App</p>
             </a>
-            <p className={s.description}>This web app shows you the cryptocurrency prices in MXN, USD, Euro and GBP. This little project was made with React and Styled Components. I created Cutome hooks for the select and option tags.</p>
+            <p className={s.description}>A cryptocurrency price tracker that displays real-time prices in MXN, USD, Euro, and GBP. Built with React and Styled Components, this app offers an intuitive way to monitor cryptocurrency prices in multiple currencies.
+
+            <br/><br/>Features: 
+            <br/>✔️ Real-time cryptocurrency prices in multiple currencies (MXN, USD, Euro, GBP)
+            <br/>✔️ Custom hooks for handling select and option tags
+            <br/>✔️ Clean, responsive design using Styled Components
+            <br/>✔️ Easy navigation and user-friendly interface</p>
           </li>
         </ul>
       </div>
